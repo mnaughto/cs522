@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=ffbfc452fcd7b92942ce89ffd6ac73236d157bf6">
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>cs522 by mnaughto</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>cs522</h1>
+          <h2>Hosting for my CS522 final project</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+          
+	  
+          <a href="http://github.com/mnaughto/cs522" id="view-on-github" class="button"><span>View on GitHub</span></a>
+	    
+        </section> 
+        <hr>
+        <section id="main_content">
+          <h1 id="improving-web-gis-usability">Improving Web GIS Usability</h1>
+
+<p>I am currently a lead software engineer at HBK Engineering, LLC, a civil engineering company which focuses on utility engineering. My job duties primarily involve developing and maintaining a web-based geographic information system (Figure 1) which is used by various stakeholders within and external to the company.</p>
+
+<p><img src="img/figure01.png" alt="" />
+<em>Figure 1 - Screenshot of existing GIS system</em></p>
+
+<p>My semester project for this class will consist of <em>exploring</em> the idea of making several notable modifications to this application and evaluating user responses to those modifications. I emphasize “exploring”, as some changes may not be approved for production use.</p>
+
+<h2 id="background">Background</h2>
+<p>At its core, the aforementioned web application allows users to organize, author, and review geographic content and associated files and metadata. Application content is heterogeneous: it may be derived from ESRI data sources, a Mongo database, or spreadsheets. Built on top of the core functionality are features for search, data import and export, and basic geospatial querying. As with any application, there is also some administrative functionality.</p>
+
+<p>There are a relatively small number of users of the application. In a company of roughly 450 individuals, there are approximately 100 monthly active users and 30 daily active users. Aside from administrators, there are three general types of users of the application, profiled in the following section.</p>
+
+<h2 id="user-stories">User Stories</h2>
+
+<h3 id="daphne">Daphne</h3>
+<p>Daphne is a 26-year-old civil engineer. She works on a variety of projects within the company. Though she’s generally tech-savvy, she gets really frustrated when applications she uses don’t work as she expects. One of her tasks one week was to enter the geographies, attributes, and files for thirty different records into the system. Although she knew where to get all of the information for each record, she got frustrated at how many steps it took to save each record. She even lost a few records because they were only saved in her session, even though they looked like they’d been saved to the server. This cost her extra time and required her to stay late one night.</p>
+
+<h3 id="mark">Mark</h3>
+<p>Mark is a 53-year-old utility locator. His job entails working outdoors using a rugged laptop. He’s accustomed to some level of technology at work, but it’s not something that comes easily for him. After returning from an extended vacation in January, he found himself assigned to an unfamiliar area to cover for someone else on vacation. He needed to freshly download detailed drawings stored on the system for this new area, but this cost him quite a bit of time as he had to select each individual asset to download the files.</p>
+
+<h3 id="jim">Jim</h3>
+<p>Jim is a 47-year-old sales manager. He’s a high-energy guy who always seems to be on-the-go. Although he generally works out of the office, he often travels to various clients and potential clients to run meetings and presentations. Most client offices have laptop hookups in their meeting rooms, but some do not have reliable internet connections. Jim likes to use the GIS application in sales pitches, but often just takes screenshots rather than risk not being able to load data for the presentation. When he does give a presentation with the application, the presentation screen is sometimes cluttered with extraneous information from the application which is confusing to meeting attendees.</p>
+
+<h2 id="goals">Goals</h2>
+<p>These users encountered several problems as they worked with the system. Daphne was frustrated by the inefficiency of the system and with how it did not completely match her mental expectation for when content was “saved”. Mark was again inconvenienced by the inefficiency of the system, and may occasionally be confused by the number of available functions in the system. Jim does not find the system to be flexible or reliable enough for use in presentations. Potential clients who see the system may be confused by some of the clutter.</p>
+
+<p>Over the course of this project, I hope to correct some or all of these problems, by focusing on emphasizing “popular” functions used by content authors (like Daphne) and consumers (like Mark). I am also hoping to improve the presentation experience for users like Jim.</p>
+
+<h2 id="related-work">Related Work</h2>
+<p>There are several well-known interfaces for interacting with geospatial information. Among these are Google Earth, ESRI (Figure 2), and CartoDB (Figure 3). Each offers a slightly different philosophy regarding interface layout and overall experience. Additionally, a colleague that I work with has developed some conceptual wireframes (Figure 4) which may be a good reference point, as well.</p>
+
+<p><img src="img/figure02.png" alt="" />
+<em>Figure 2 - Screenshot of ESRI web map</em></p>
+
+<p><img src="img/figure03.png" alt="" />
+<em>Figure 3 - Screenshot of CartoDB application</em></p>
+
+<p><img src="img/figure04.png" alt="" />
+<em>Figure 4 - GIS application wireframe</em></p>
+
+<p>As far as formal research is concerned, much of it seems to focus on geospatial usage on small screens and handheld devices or table tops rather than full-sized workstation displays or large wall-mounted displays. One article which evaluates interface alternatives for geospatial systems is “Multimodal Interactive Maps: Designing for Human Performance” [1]. The focus on that article is on speech-driven input, which may be beneficial to this project.</p>
+
+<h2 id="methods">Methods</h2>
+<p>To collect requirements for this project, a survey and possibly some user interviews will be used, including consultation with “expert” users. Although it may be possible to instrument our application to retrieve timing information and other analytics for some use cases, it may not be feasible given the short project timeline and limited user base.</p>
+
+<p>Once requirements have been gathered, we will evaluate alternatives by prototyping them and presenting to an expert or even performing A/B testing in production amongst trusted users. It should be noted that the development and evaluation options may be constrained by development resources and organizational limitations, unfortunately.</p>
+
+<h2 id="references">References</h2>
+<ol>
+  <li>Oviatt, Sharon. “Multimodal interactive maps: designing for human performance.” Human-Computer Interaction 12.1 (1997): 93-129.</li>
+</ol>
+
+        </section>
+
+        <footer>
+        
+          cs522 is maintained by <a href="http://github.com/mnaughto">mnaughto</a><br>
+        
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>
