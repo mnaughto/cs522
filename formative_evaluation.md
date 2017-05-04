@@ -8,7 +8,9 @@ Several notable challenges were encountered while users were performing the eval
 
 ## Scenario 1 - Modifying an existing “project walkthrough”
 
-![](img/figure17.png) ![](img/figure18.png)
+![](img/figure17.png)
+![](img/figure18.png)
+
 *Figure 17 - Prototype for Scenario 1*
 
 ### Script
@@ -27,7 +29,10 @@ Based on observations, users tended to rush through the “read-only” walkthro
 
 ## Scenario 2 - Performing a spatial query
 
-![](img/figure19.png) ![](img/figure20.png) ![](img/figure21.png)
+![](img/figure19.png)
+![](img/figure20.png)
+![](img/figure21.png)
+
 *Figure 18 - Prototype for Scenario 2*
 
 ### Script
@@ -48,7 +53,10 @@ The goal for Scenario 2 was for the user to count the number of geometries in an
 While performing this exercise, one user tried to individually count the shapes because they weren’t aware that a spatial query could be used to accomplish the task. Both users instinctively went to the left layer pane to verify that they would be searching the right layers, rather than indicating their selections in the spatial query pane. It also seemed unclear what needed to happen once the layers to be searched were added to the box in “Step 1”.
 
 ## Scenario 3 - Drawing around an asset
-![](img/figure22.png) ![](img/figure23.png) ![](img/figure24.png)
+![](img/figure22.png)
+![](img/figure23.png)
+![](img/figure24.png)
+
 *Figure 19 - Prototype for Scenario 3*
 
 ### Script
@@ -72,4 +80,4 @@ The goal for Scenario 3 was for the user to draw an arbitrary outline around the
 Users were observed to be less confident about their actions when performing this task. They were both able to reach the map page easily, but had difficulty determining how the geometry could be located. Instinctively, one of the users clicked the pencil icon then immediately started clicking the map, which was surprising.
 
 ## Overall Feedback
-Through these formative evaluations, we found several areas in our initial designs which need refinement. One of the users indicated that hiding the search field when entering “edit” mode might be confusing for many users. The spatial query process also still seemed rather “clumsy” for both users. Both users tried to start drawing immediately after “clicking” the “edit” icon on the map page, which seems indicative of a needed change. One user also encouraged the creation of a menu of “functions” for advanced operations like spatial queries, and this idea will be incorporated into future iterations. Additionally, we will stop “hiding” the search field when another interaction mode is entered, and we will try to investigate ways in which the spatial query process may be refined. We will also try to determine how some of the other “hangups” discussed in the preceding results sections can be addressed.
+Through these formative evaluations, we found several areas in our initial designs which needed refinement. One of the users indicated that hiding the search field when entering “edit” mode might be confusing for many users. The spatial query process also still seemed rather “clumsy” for both users. Both users tried to start drawing immediately after “clicking” the “edit” icon on the map page, which seems indicative of a needed change. One user also encouraged the creation of a menu of “functions” for advanced operations like spatial queries, and this idea was ultimately incorporated into the functional prototype. Additionally, we stopped “hiding” the search field when another interaction mode was entered, and we tried to investigate ways in which the spatial query process may be refined. We will also tried to determine how some of the other “hangups” discussed in the preceding results sections could be addressed.
